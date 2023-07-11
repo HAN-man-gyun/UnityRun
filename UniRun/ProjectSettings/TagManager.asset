@@ -39,9 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: coin
-    uniqueID: 1253858091
-    locked: 0
   - name: BackGround
     uniqueID: 2589869577
     locked: 0
@@ -50,6 +47,9 @@ TagManager:
     locked: 0
   - name: MiddleGround
     uniqueID: 890500761
+    locked: 0
+  - name: coin
+    uniqueID: 1253858091
     locked: 0
   - name: Player
     uniqueID: 3641414979

@@ -15,6 +15,7 @@ public class Coin : MonoBehaviour
         coinSprite = GetComponent<SpriteRenderer>();
         Function.Assert(coinAudio != null);
         coinAudio.clip = coinClip;
+        coinSprite.enabled = true;
     }
 
     // Update is called once per frame
