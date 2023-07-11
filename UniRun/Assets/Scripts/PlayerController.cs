@@ -57,6 +57,8 @@ public class PlayerController : MonoBehaviour
 
         playerRigid.velocity = Vector2.zero;
         isDead = true;
+
+        GameManager.instance.OnPlayerDead();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -75,7 +77,7 @@ public class PlayerController : MonoBehaviour
             jumpCount = 0;
         }
     }
-    private void OnCollisionExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
     }

@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: coin
+    uniqueID: 1253858091
+    locked: 0
   - name: BackGround
     uniqueID: 2589869577
     locked: 0
@@ -53,7 +56,4 @@ TagManager:
     locked: 0
   - name: ForeGround
     uniqueID: 4004706521
-    locked: 0
-  - name: Text
-    uniqueID: 1253858091
     locked: 0
