@@ -33,7 +33,8 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead) { return; }
 
-        if (Input.GetMouseButtonDown(0) && jumpCount < 50)
+
+        /*if (Input.GetMouseButtonDown(0) && jumpCount < 50)
         {
             jumpCount += 1;
             playerRigid.velocity = Vector2.zero;
@@ -41,6 +42,23 @@ public class PlayerController : MonoBehaviour
             playerAudio.Play();
         }
         else if (Input.GetMouseButtonDown(0) && 0 < playerRigid.velocity.y)
+        {
+            playerRigid.velocity = playerRigid.velocity * 0.5f;
+        }*/
+        //Jump();
+        animator.SetBool("Ground", isGrounded);
+    }
+
+    public void Jump()
+    {
+        if (jumpCount < 50)
+        {
+            jumpCount += 1;
+            playerRigid.velocity = Vector2.zero;
+            playerRigid.AddForce(new Vector2(0, jumpForce));
+            playerAudio.Play();
+        }
+        else if (0 < playerRigid.velocity.y)
         {
             playerRigid.velocity = playerRigid.velocity * 0.5f;
         }
